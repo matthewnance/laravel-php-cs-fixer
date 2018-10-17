@@ -4,7 +4,7 @@
     "type": "library",
     "license": "MIT",
     "keywords": [
-        "laravel-php-cs-fixer",
+        "laravel-php-cs-fixer"
     ],
     "autoload": {
         "classmap": [
@@ -29,6 +29,5 @@
     "require-dev": {
         "illuminate/console": "5.4.x|5.5.x|5.6.x"
     },
-
     "minimum-stability": "stable"
 }
