@@ -1,6 +1,6 @@
 <?php
 
-namespace STS\Fixer\Console;
+namespace MatthewNance\Fixer\Console;
 
 use Illuminate\Console\Command;
 use PhpCsFixer\Config;
@@ -39,7 +39,7 @@ class FixCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'fixer:fix 
+    protected $signature = 'fixer:fix
             {--path=* : The path.}
             {--path-mode=override : Specify path mode (can be override or intersection).}
             {--allow-risky= : Are risky fixers allowed (can be yes or no).}
@@ -218,14 +218,14 @@ class FixCommand extends Command
         if (null !== $this->option('config') && null !== $this->option('rules')) {
             if (getenv('PHP_CS_FIXER_FUTURE_MODE')) {
                 throw new \RuntimeException(
-                    'Passing both `config` and `rules` options is not possible. 
+                    'Passing both `config` and `rules` options is not possible.
                     This check was performed as `PHP_CS_FIXER_FUTURE_MODE` env var is set.'
                 );
             }
 
-            $this->warn('When passing both "--config" and "--rules" 
+            $this->warn('When passing both "--config" and "--rules"
                 the rules within the configuration file are not used.');
-            $this->warn('Passing both options is deprecated; version 
+            $this->warn('Passing both options is deprecated; version
                 v3.0 PHP-CS-Fixer will exit with a configuration error code.');
         }
     }

@@ -1,37 +1,30 @@
 {
-    "name": "stechstudio/laravel-php-cs-fixer",
+    "name": "matthewnance/laravel-php-cs-fixer",
     "description": "Easily format your Laravel Code with this Configuration file and accompanying artisan command.",
     "type": "library",
     "license": "MIT",
     "keywords": [
-        "php-cs-fixer",
-        "develop",
-        "artisan",
-        "lumen",
-        "laravel",
-        "coding",
-        "standards",
-        "fixer"
+        "laravel-php-cs-fixer",
     ],
     "autoload": {
         "classmap": [
         ],
         "psr-4": {
-            "STS\\Fixer\\": "src"
+            "MatthewNance\\Fixer\\": "src"
         },
         "files": [
         ]
     },
     "authors": [
         {
-            "name": "Bubba Hines",
-            "email": "rob@stechstudio.com"
+            "name": "Matthew Nance",
+            "email": "mn8809@gmail.com"
         }
     ],
     "require": {
         "php": ">=7.0 <7.3",
         "illuminate/support": "5.4.x|5.5.x|5.6.x",
-        "friendsofphp/php-cs-fixer": "2.9.*"
+        "friendsofphp/php-cs-fixer": "2.13.*"
     },
     "require-dev": {
         "illuminate/console": "5.4.x|5.5.x|5.6.x"

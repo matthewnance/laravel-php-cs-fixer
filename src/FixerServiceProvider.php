@@ -1,9 +1,9 @@
 <?php
 
-namespace STS\Fixer;
+namespace MatthewNance\Fixer;
 
 use Illuminate\Support\ServiceProvider;
-use STS\Fixer\Console\FixCommand;
+use MatthewNance\Fixer\Console\FixCommand;
 
 class FixerServiceProvider extends ServiceProvider
 {
