@@ -21,7 +21,7 @@ do all the other laravel packages you use.
 > **Note:** This documentation was written for Laravel 5.5.
 * PHP Version: ">=7.0 <7.3"
 * Laravel/Lumen: "5.4.x|5.5.x"
-* PHP-CS-Fixer: "2.9.*"
+* PHP-CS-Fixer: "2.13.*"
 
 ## Installation
 
@@ -34,12 +34,12 @@ composer require stechstudio/laravel-php-cs-fixer
 For Lumen services, add:
 
 ```php
-$app->register(STS\Fixer\FixerServiceProvider::class);
+$app->register(MatthewNance\Fixer\FixerServiceProvider::class);
 ```
 to `bootstrap/app.php`. For Laravel applications, add:
 
 ```php
-STS\Fixer\FixerServiceProvider::class,
+MatthewNance\Fixer\FixerServiceProvider::class,
 ```
 
 to the `providers` array in `config/app.php`.
@@ -84,7 +84,7 @@ return [
 ];
 ```
 
-if you want to modify this yourself, just use artisan `artisan vendor:publish --provider="STS\Fixer\FixerServiceProvider"` 
+if you want to modify this yourself, just use artisan `artisan vendor:publish --provider="MatthewNance\Fixer\FixerServiceProvider"` 
 and it will put the default configuration in 'config/fixer.php'. Check the  
 [PHP-CS-Fixer/README](https://github.com/FriendsOfPHP/PHP-CS-Fixer#usage) for valid rules.
 
