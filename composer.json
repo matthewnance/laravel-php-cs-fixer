@@ -1,6 +1,6 @@
 {
     "name": "matthewnance/laravel-php-cs-fixer",
-    "description": "Easily format your Laravel Code with this Configuration file and accompanying artisan command.",
+    "description": "Laravel wrapper for enforcing proper php coding standards.",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -24,7 +24,7 @@
     "require": {
         "php": ">=7.0 <7.3",
         "illuminate/support": "5.4.x|5.5.x|5.6.x",
-        "friendsofphp/php-cs-fixer": "2.13.*"
+        "friendsofphp/php-cs-fixer": "2.13.^"
     },
     "require-dev": {
         "illuminate/console": "5.4.x|5.5.x|5.6.x"
