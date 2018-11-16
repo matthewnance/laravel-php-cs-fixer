@@ -26,7 +26,7 @@ do all the other laravel packages you use.
 ## Installation
 
 ```
-composer require stechstudio/laravel-php-cs-fixer
+composer require matthewnance/laravel-php-cs-fixer
 ```
 
 ### Register the Provider:
